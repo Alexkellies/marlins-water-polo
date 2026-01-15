@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marlins Water Polo Club</title>
+  <style>
+    :root {
+      --primary: #0a2540;
+      --secondary: #1e90ff;
+      --accent: #00c2cb;
+      --light: #f5f8fb;
+      --dark: #061726;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(10,37,64,0.85), rgba(10,37,64,0.85)),
+                  url('https://images.unsplash.com/photo-1601924579440-3f6c0fba5f93?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 10px;
+      background: var(--secondary);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.4rem;
+      color: var(--primary);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    .highlight {
+      background: var(--primary);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .highlight h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #cfd8e3;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+    /* INTERACTIVITY */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form button {
+      width: 100%;
+      padding: 14px;
+      background: var(--secondary);
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: var(--accent);
+    }
+    /* FLOATING WHATSAPP BUTTON */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO / HOME -->
+  <header>
+    
+    <img src="IMG_9677.PNG" alt="Marlins Water Polo Club Logo" />
+    <h1>Marlins Water Polo Club</h1>
+    <p>Professional water polo training in Pretoria, founded by Olympian and former SA Men's Water Polo player Nardus Badenhorst.</p>
+    <a href="#girls" class="btn">Girls Programs</a>
+    <a href="#boys" class="btn">Boys Programs</a>
+  </header>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Training Programs | Marlins Water Polo Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<section class="section">
+  <h3>Training Programs</h3>
+  <p>
+    Marlins Water Polo Club offers structured training programs designed by experienced coaches.
+    These programs can be purchased individually and are suitable for developing athletes,
+    competitive players, and girls of all ages.
+  </p>
+</section>
+
+<section class="section cards">
+
+<div class="card">
+    <h4>Join the club</h4>
+    <p>
+     Jump into the pool with clubmembers of the same age group
+    </p>
+    <p><strong>Includes:</strong>Weekly club trainings with high experienced coaches and games against other water polo clubs</p>
+  </div>
+
+  <div class="card">
+    <h4>In-Pool Private Training </h4>
+    <p>
+      Structured in-pool private training focusing on skills, swimming fitness, shooting,
+      tactical awareness, and match preparation.
+    </p>
+    <p><strong>Suitable for:</strong> Ages 9–18 & Girls (All Ages)</p>
+  </div>
+
+  <div class="card">
+    <h4>Gym & Strength Programs</h4>
+    <p>
+      Water-polo-specific gym programs designed to improve strength, power,
+      injury prevention, and overall athletic development.
+    </p>
+    <p><strong>Includes:</strong> Age-appropriate and girls-specific options</p>
+  </div>
+
+  <div class="card">
+    <h4>Winter Training Programs</h4>
+    <p>
+      Off-season winter programs focused on maintaining fitness, improving technique,
+      and preparing athletes for the upcoming season.
+    </p>
+    <p><strong>Includes:</strong> Dryland and swimming, conditioning, and skill-based work</p>
+  </div>
+
+  <div class="card">
+    <h4>Online Training & Coaching</h4>
+    <p>
+      Online training programs athletes can follow at home or at their own pool or gym,
+      designed and monitored by Marlins coaches.
+    </p>
+    <p><strong>Ideal for:</strong> Athletes wanting to train without coming to the facilty</p>
+  </div>
+
+  <div class="card">
+    <h4>Online Assessments & Coach Feedback</h4>
+    <p>
+      Submit training videos and performance data for professional assessment and
+      personalised feedback from Marlins coaches.
+    </p>
+    <p><strong>Includes:</strong> Skill analysis, fitness feedback, and progress reports</p>
+  </div>
+
+<div class="card">
+    <h4>Learn to polo</h4>
+    <p>
+     Learn the great sport of Water Polo and the fundamentals of the game.
+    </p>
+    <p><strong>Includes:</strong> a Free session to join and extra attention to make sure the kids are taken care of</p>
+  </div>
+
+</section>
+
+<section class="section">
+  <h3>How to Purchase</h3>
+  <p>
+    To purchase a training program or book an online assessment, please contact us directly.
+    Program details, pricing, and recommendations will be provided based on the athlete’s age
+    and experience level.
+  </p>
+</section>
+
+<footer>
+  <p>© Marlins Water Polo Club | Pretoria / St Albans</p>
+</footer>
+
+</body>
+</html>
+
+ 
+
+  <!-- GIRLS PROGRAM -->
+  <section id="girls">
+    <div class="section-title">
+      <h2>Girls Program</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Ages</h3>
+        <p>All ages welcome</p>
+      </div>
+      <div class="card">
+        <h3>Focus</h3>
+        <p>Skill development, teamwork, fitness, and competitive play.</p>
+      </div>
+<div class="card">
+        <h3>Days and Times</h3>
+        <p>Tuesdays & Thursdays</p>
+        <p>17:30-18:30</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOYS PROGRAM -->
+  <section id="boys">
+    <div class="section-title">
+      <h2>Boys Program</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Ages</h3>
+        <p>10 – 13 years</p>
+      </div>
+      <div class="card">
+        <h3>Focus</h3>
+        <p>Fundamentals, game understanding, and long-term athlete development.</p></div>
+        <div class="card">
+        <h3>Days and Times</h3>
+        <p>Tuesdays & Thursdays</p>
+        <p>17:30-18:30</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHES & SEASON INFO -->
+  <section>
+    <div class="section-title">
+      <h2>Coaches & Season Information</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Head Coach</h3>
+        <p><strong>Nardus Badenhorst</strong><br /></p>
+        <h3>Coaches</h3>
+        <p><strong>Alexander Kelbrick, Ben Melville, Marissa Badenhorst</strong><br /></p>
+      </div>
+      <div class="card">
+        <h3>Season</h3>
+        <p>January 26 – March 18</p>
+      </div>
+      <div class="card">
+        <h3>Season Fees</h3>
+        <p>R1800 per season<br /></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section id="gallery">
+    <div class="section-title">
+      <h2>Photo Gallery</h2>
+      <p>Training, matches, and club moments</p>
+    </div>
+
+    <div class="cards">
+      <div class="card"><img src= Images/photo1.jpg auto=format&fit=crop&w=600&q=80" style="width:100%; border-radius:15px" alt="Water polo training"></div>
+      <div class="card"><img src= Images/photo4.jpg auto=format&fit=crop&w=600&q=80" style="width:100%; border-radius:15px" alt="Water polo match"></div>
+      <div class="card"><img src= Images/photo2.jpg auto=format&fit=crop&w=600&q=80" style="width:100%; border-radius:15px" alt="Team training"></div>
+      <div class="card"><img src= Images/photo3.jpg auto=format&fit=crop&w=600&q=80" style="width:100%; border-radius:15px" alt="Pool action"></div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <div class="highlight">
+    <h2>Ready to join Marlins Water Polo?</h2>
+    <p>Train with purpose. Compete with confidence. Learn from the best.</p>
+    <a href="#contact" class="btn">Join the Club</a>
+  </div>
+
+  <!-- CONTACT FORM -->
+  <section id="contact">
+    <div class="section-title">
+      <h2>Contact & Registration</h2>
+      <p>Fill in the form below and we will contact you shortly.</p>
+    </div>
+
+    <!-- FREE Formspree form (replace YOUR_FORM) -->
+    <form action="https://formspree.io/f/xeeeoljl" method="POST">
+      <input type="text" name="parent_name" placeholder="Parent / Athlete Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone / WhatsApp Number" required />
+
+      <select name="interest" required>
+        <option value="">Select Interest</option>
+        <option>Gym and strength program</option>
+        <option>Join the Club</option>
+        <option>Private Coaching</option>
+        <option>Learn to Polo</option>
+        <option>Winter Program</option>
+        <option>Online training and coaching</option>
+        <option>Online Assessments&Feedback</option>
+      </select>
+
+      <textarea name="message" rows="4" placeholder="Additional information or questions"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Marlins Water Polo Club | Pretoria, South Africa</p>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/0730267511 class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+</body>
+</html>
